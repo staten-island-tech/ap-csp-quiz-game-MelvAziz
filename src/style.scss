@@ -1,0 +1,29 @@
+body {
+  background-color: white;
+  height: 95vh;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 62.5%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3rem auto;
+  width: 90vw;
+  background-color: white;
+  flex-wrap: wrap;
+}
+.question-text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 400%;
+}
+.choice {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
