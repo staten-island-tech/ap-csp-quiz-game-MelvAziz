@@ -2,6 +2,10 @@ const DOMSelectors = {
   displayContainer: document.querySelector(".container"),
   startButton: document.querySelector(".start-btn"),
   retryButton: document.querySelector(".retry-btn"),
+  one: document.querySelector(".choice-0"),
+  two: document.querySelector(".choice-1"),
+  three: document.querySelector(".choice-2"),
+  four: document.querySelector(".choice-3"),
 };
 
 const questions = [
@@ -121,6 +125,19 @@ const questions = [
   document.addEventListener("click", function (e) {
     if (e.target.className == "submit-btn btn") {
       console.log("The submit button was pressed.");
+      if (answer == questions[questionNumber].correctAnswer) {
+        if (answer == 0) {var correcti = document.getElementById("choice-0"); correcti.style.backgroundColor = "#20df3b";}
+        else if (answer == 1) {var correcti = document.getElementById("choice-1"); correcti.style.backgroundColor = "#20df3b";}
+        else if (answer == 2) {var correcti = document.getElementById("choice-2"); correcti.style.backgroundColor = "#20df3b";}
+        else if (answer == 3) {var correcti = document.getElementById("choice-3"); correcti.style.backgroundColor = "#20df3b";}
+      }
+      else {
+        if (answer == 0) {var correcti = document.getElementById("choice-0"); correcti.style.backgroundColor = "#f70f08";}
+        else if (answer == 1) {var correcti = document.getElementById("choice-1"); correcti.style.backgroundColor = "#f70f08";}
+        else if (answer == 2) {var correcti = document.getElementById("choice-2"); correcti.style.backgroundColor = "#f70f08";}
+        else if (answer == 3) {var correcti = document.getElementById("choice-3"); correcti.style.backgroundColor = "#f70f08";}
+      }
+      setTimeout(function (e) {   
       if (typeof answer == "undefined") {
         alert("YOU MUST SELECT AN ANSWER! DO IT!!!");
         console.log("no answer has been selected");
@@ -156,8 +173,9 @@ const questions = [
           );
         }
       }
+
+    }, 1000);
     }
   });
 })();
-
 
