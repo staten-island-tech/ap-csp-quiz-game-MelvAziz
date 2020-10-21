@@ -4,7 +4,8 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-size: 62.5%;
+  font-size: 90%;
+  flex-direction: row;
 }
 .container {
   display: flex;
@@ -12,8 +13,9 @@ body {
   justify-content: space-around;
   align-items: center;
   margin: 3rem auto;
-  width: 90vw;
-  background-color: white;
+  width: 80%;
+  height: 90%;
+  background-color: #cffff2;
   flex-wrap: wrap;
 }
 .question-text {
@@ -26,4 +28,29 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+.btn {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.choice{
+  background-color: #c5b0ff;
+  border: none;
+  color: black;
+  width: 400px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border: 1px solid black;
+}
+.choice:hover {
+  background-color: #581cff;
+  color: white;
 }

@@ -85,6 +85,7 @@ const init = function () {
         console.log(`Answer ${answer} was selected.`);
         if (answer == questions[questionNumber].correctAnswer) {
           correctAnswers++;
+
         }
         if (questionNumber < questions.length - 1) {
           questionNumber++;
@@ -93,7 +94,7 @@ const init = function () {
           DOMSelectors.displayContainer.insertAdjacentHTML(
             "afterbegin",
             `<ul class="question_container">
-              <h1>${correctAnswers}/${questions.length}</h1>
+            <h1>${correctAnswers}/${questions.length}</h1>
               <h1>${questions[questionNumber].question}</h1>
               <input type="button" class="choice" id="choice-0" value="${questions[questionNumber].choiceOne}">
               <input type="button" class="choice" id="choice-1" value="${questions[questionNumber].choiceTwo}">
