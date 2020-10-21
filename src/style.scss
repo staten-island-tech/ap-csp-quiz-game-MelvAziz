@@ -1,4 +1,9 @@
 body {
+  //background-image: url("images/image-placeholder-title.jpg");
+  //background-repeat: no-repeat;
+  //background-position: center;
+  //background-size: contain;
+  //background-attachment: fixed;
   background-color: white;
   height: 95vh;
   box-sizing: border-box;
@@ -8,9 +13,10 @@ body {
   flex-direction: row;
 }
 .container {
+  opacity: 70%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   margin: 3rem auto;
   width: 80%;
@@ -53,4 +59,7 @@ body {
 .choice:hover {
   background-color: #581cff;
   color: white;
+}
+.h1{
+  height: 30px;
 }
